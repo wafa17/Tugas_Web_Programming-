@@ -1,0 +1,391 @@
+html, body {
+     background: #2c3e50;
+}
+ nav {
+    margin-top: 40px;
+}
+ nav .drop-down {
+     list-style: none;
+     overflow: hidden;
+     height: 220px;
+     background-color: #dbae1a;
+     font-family: 'Trebuchet MS';
+     width: 200px;
+     margin: 0 auto;
+     padding: 0;
+     text-align: center;
+     -webkit-transition: height 0.3s ease;
+     transition: height 0.3s ease;
+     float: left;
+}
+ nav .drop-down.closed {
+     height: 43px;
+}
+ nav .drop-down li {
+     border-bottom: 5px solid #2c3e50;
+}
+ nav .drop-down li a {
+     display: block;
+     color: #ecf0f1;
+     text-decoration: none;
+     padding: 10px;
+}
+ .drop-down li a:hover {
+     background-color: #e67e22;
+}
+ nav .drop-down li:first-child a:after {
+     content: "\25BC";
+     float: right;
+     margin-left: -30px;
+     margin-right: 5px;
+}
+ #menuutama{
+     color: rgb(228, 174, 57);
+     font-family: 'Trebuchet Ms';
+     font-size: 60px;
+     padding: 10px;
+     margin: 10px;
+}
+ #bawahmenu{
+     color: orange;
+     font-family: 'Lucida Sans Unicode';
+     font-size: 20px;
+     padding: 10px;
+     margin:10px;
+}
+ .mainmenu{
+     width: 800px;
+     margin: 0 auto;
+     margin-top:25%;
+}
+ #profilp{
+     color: orange;
+     font-family: 'Lucida Sans Unicode';
+     font-size: 70px;
+     padding: 10px;
+     margin:10px;
+}
+ #fotoprofil{
+     width:45%;
+     height: 25%;
+     margin-left: 32%;
+     margin-right: 18%;
+}
+ #tabelbio tr td{
+     font-family: 'Trebuchet MS';
+     color: white;
+     border-collapse: collapse;
+     border: 1px solid orange;
+     padding: 8px 20px;
+}
+ #submitt{
+     columns: span 3px;
+     align-items: flex-end;
+}
+ #form{
+     margin-right: 10%;
+     margin-left: 20%;
+}
+ #form tr td{
+     font-family: 'Trebuchet MS';
+     color: white;
+     border-collapse: collapse;
+     border: 1px solid rgba(255, 166, 0, 0.616);
+     padding: 8px 20px;
+     background-color:rgba(255, 166, 0, 0.616);
+     align-self: auto;
+}
+ #title{
+     color: orange;
+     font-family: 'Lucida Sans Unicode';
+     font-size: 65px;
+     padding: 10px;
+     margin:20px;
+     text-align: center;
+}
+ .submit{
+     position:relative;
+     box-sizing:border-box;
+     display:block;
+     width:100px;
+     border: 0px none;
+     padding: 0px 15px;
+     text-align:center;
+     font-family:'Lucida Sans';
+     font-weight:400;
+     text-shadow: 0px 0px 0px transparent;
+     border-radius: 4px;
+     color:#FFF;
+     background:#dd8716 none repeat scroll 0% 0%;
+     height: 30px;
+     line-height: 29px;
+     font-size: 16px;
+     margin:auto;
+     margin-top:10px;
+}
+ .pic {
+     width: 100%;
+     height:100% ;
+}
+ .cycle-slideshow {
+     width: 80%;
+     height: 65%;
+     display: block;
+     position: relative;
+     margin-left: 20% ;
+     margin-right: 20% ;
+     overflow: hidden;
+}
+ .cycle-prev, .cycle-next {
+     font-size: 100%;
+     color: #fff;
+     display: block;
+     position: absolute;
+     top: 50%;
+     z-index: 9999;
+     cursor: pointer;
+     margin-top: -16px;
+}
+ .cycle-prev {
+     left: 42px;
+}
+ .cycle-next {
+     right: 62px;
+}
+ .cycle-pager {
+     position: absolute;
+     width: 100%;
+     height: 10px;
+     bottom: 10px;
+     z-index: 9999;
+     text-align: center;
+}
+ .cycle-pager span {
+     text-indent: 100%;
+     top: 100px;
+     width: 10px;
+     height: 10px;
+     display: inline-block;
+     border: 1px solid #fff;
+     border-radius: 50%;
+     margin: 0 10px;
+     white-space: nowrap;
+     cursor: pointer;
+}
+ .cycle-pager-active {
+     background-color: #fff;
+}
+ #profil {
+     width: 98.75%;
+     display: block;
+     padding: 50px;
+     background-color: white;
+     text-align: justify;
+     color: rgb(219, 99, 145);
+     font-size: 15px;
+     font-family: arial;
+}
+ #pendidikan{
+     background-color: white;
+}
+ #head {
+     width: 98.75%;
+     display: block;
+     padding: 10px;
+     background-color: white;
+     text-align: justify;
+     color: rgb(219, 99, 145);
+     font-size: 30px;
+     font-family: arial;
+}
+ #riwayatpendidikan {
+     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+     border-collapse: collapse;
+     width: 100%;
+}
+ #riwayatpendidikan td {
+     border: 1px solid #ddd;
+     padding: 8px;
+}
+ #riwayatpendidikan tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+ #riwayatpendidikan tr:hover {
+    background-color: #ddd;
+}
+ #main{
+     width: 15%;
+     cursor: pointer;
+}
+ a {
+     outline: 0;
+}
+ #organisasi{
+     background-color: white;
+}
+ #riwayatorganisasi {
+     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+     border-collapse: collapse;
+     width: 100%;
+}
+ #riwayatorganisasi td, #riwayatorganisasi th {
+     border: 1px solid #ddd;
+     padding: 8px;
+}
+ #riwayatorganisasi tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+ #riwayatorganisasi tr:hover {
+    background-color: #ddd;
+}
+ #riwayatorganisasi th {
+     padding-top: 12px;
+     padding-bottom: 12px;
+     text-align: left;
+     background-color: rgb(21, 22, 27);
+     color: white;
+}
+ #skill {
+     background-color: white;
+     color: rgb(219, 99, 145);
+     font-size: 15px;
+     font-family: arial;
+}
+ #skil{
+     width: 85%;
+     padding: 20px 20px;
+     display: block;
+}
+ #cp{
+     background-color: white;
+     color: rgb(219, 99, 145);
+     font-size: 15px;
+     font-family: arial;
+}
+ ul #sosmed {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: white;
+     float: left;
+}
+ li a img {
+     width: 10%;
+     display: inline;
+     vertical-align: baseline;
+}
+ .socmed{
+     cursor: pointer;
+}
+/* Chat CSS */
+ .chat_box, .msg_box {
+     cursor: pointer;
+     position: fixed;
+     bottom: 0px;
+     right: 20px;
+     background: white;
+     width : 250px;
+    /*height: 400px;
+    */
+     border-radius: 5px 5px 0px 0px;
+}
+ .msg_box {
+    /*height: 350px;
+    */
+     bottom: -5px;
+}
+ .chat_head,.msg_head {
+     background: #f39c12;
+     padding: 15px;
+     color: white;
+     font-weight: bold;
+     border-radius: 5px 5px 0px 0px;
+    /*position: fixed;
+    */
+}
+ .chat_body {
+     height: 400px;
+}
+ .user {
+     padding: 20px 25px;
+     position: relative;
+     cursor: pointer;
+}
+ .user:hover {
+     background: #f8f8f8;
+}
+ .user:before {
+     content: "";
+     position: absolute;
+     background-color: #ca7424;
+     width: 10px;
+     height: 10px;
+     left: 8px;
+     top: 24px;
+     border-radius: 50%;
+}
+ .msg_head {
+     background: #f3d52b;
+}
+ .close {
+     float: right;
+}
+ .msg_body {
+     height: 250px;
+     font-size: 12px;
+     overflow-y: auto;
+     overflow-x: hidden;
+     background: #bdc3c7;
+}
+ .msg_input {
+     border-color: transparent;
+     border-top: 1px solid silver;
+     width: 100%;
+     box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+}
+ .msg_a {
+     margin-top: 10px;
+     margin-right: 20px;
+     min-height: 20px;
+     padding: 15px;
+     background: #dfab1e;
+     margin-left: 20px;
+     position: relative;
+     border-radius: 5px;
+     color: white;
+}
+ .msg_a:before {
+     content: "";
+     position: absolute;
+     width: 0px;
+     height: 0px;
+     top: 7px;
+     left: -30px;
+     border: 15px solid;
+     border-color: transparent #e9b422 transparent transparent;
+}
+ .msg_b {
+     margin-top: 10px;
+     width: auto;
+     margin-right: 20px;
+     min-height: 20px;
+     padding: 15px;
+     background: #ffff99;
+     margin-left: 20px;
+     position: relative;
+     border-radius: 5px;
+     color: black;
+}
+ .msg_b:before {
+     content: "";
+     position: absolute;
+     width: 0px;
+     height: 0px;
+     top: 7px;
+     right: -30px;
+     border: 15px solid;
+     border-color: transparent transparent transparent #ffff99;
+}

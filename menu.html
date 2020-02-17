@@ -1,0 +1,123 @@
+<html>
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="cssmenu.css" />
+    <title>MAIN</title>
+</head>
+
+<body>
+    <div class="navigasi">
+        <nav>
+            <ul class="drop-down closed">
+                <li><a href="#" class="nav-button">Menu</a></li>
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="galery.html">Galery</a></li>
+                <li><a href="form.html">Isi Form</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="mainmenu">
+        <center>
+            <h1 id="menuutama">WELCOME TO WAFA'S WEB</h1>
+            <p id="bawahmenu">Mahasiswi S1 Informatika | 1301174151</p>
+        </center>
+    </div>
+    <!--untuk chat-->
+    <div class="chat_box">
+        <div class="chat_head">Chatbox</div>
+        <div class="chat_body">
+            <div class="user">Wafa Zahida</div>
+        </div>
+    </div>
+
+    <div class="msg_box" style="right: 290px">
+        <div class="msg_head">Wafa Zahida
+            <div class="close">x</div>
+        </div>
+        <div class="msg_wrap">
+            <div class="msg_body">
+                <div class="msg_a">Hai</div>
+                <div class="msg_b">Hai</div>
+                <div class="msg_insert"></div>
+            </div>
+            <div class="msg_footer">
+                <textarea rows="2" class="msg_input" placeholder="Press Enter to send Message"></textarea>
+            </div>
+        </div>
+    </div>
+    <!--untuk Navigasi-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+          $(".nav-button").click(function () {
+            $(this).parent().parent().toggleClass("closed");
+          });
+        });
+    </script>
+    <!--untuk chat-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+    
+          $('.chat_head').click(function () {
+    
+            $('.chat_body').slideToggle('slow');
+    
+            // $('.user').slideToggle('slow');
+    
+          });
+    
+    
+    
+          $('.msg_head').click(function () {
+    
+            $('.msg_wrap').slideToggle('slow');
+    
+            // $('.msg_box').slideToggle('slow');
+    
+          });
+    
+    
+    
+          $(".close").click(function () {
+    
+            $('.msg_box').hide();
+    
+          });
+    
+    
+    
+          $(".user").click(function () {
+    
+            $('.msg_wrap').show();
+    
+            $('.msg_box').show();
+    
+          });
+    
+    
+    
+          $('textarea').keypress(function (e) {
+    
+            if (e.keyCode == 13) {
+    
+              var msg = $(this).val();
+    
+              $(this).val('');
+    
+              $("<div class='msg_b'>" + msg + "</div>").insertBefore('.msg_insert');
+    
+              $('.msg_body').scrollTop($('.msg_body')[0].scrollHeight);
+    
+            }
+    
+          });
+    
+        });
+    </script>
+</body>
+
+</html>

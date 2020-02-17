@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="cssmenu.css" />
+    <title>FORM</title>
+</head>
+
+<body>
+    <div class="navigasi">
+        <nav>
+            <ul class="drop-down closed">
+                <li><a href="#" class="nav-button">Menu</a></li>
+                <li><a href="menu.html">Back to Main Menu</a></li>
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="galery.html">Galery</a></li>
+
+            </ul>
+            </li>
+            </ul>
+    </div>
+    <h2 id="title"><b>Formulir Biodata Mahasiswa</b></h2>
+    <br>
+    <div class="form">
+        <form action="" method="POST">
+            <table id="form">
+                <td>Foto Terbaru</td>
+
+                <td width="900"><input type="file" name="foto_input" required />
+                </td>
+                </tr>
+                <tr>
+                    <td>Nama</td>
+
+                    <td><input type="text" name="nama_input" class="text-field" id="nama_id"
+                            placeholder="Masukkan Nama " required />
+                    </td>
+                </tr>
+                <td>Panggilan</td>
+
+                <td><input type="text" name="nama_input" class="text-field" id="nama_id"
+                        placeholder="Masukkan Panggilan" required />
+                </td>
+                </tr>
+                <td>NIM</td>
+
+                <td><input type="text" name="nama_input" class="text-field" id="nama_id" placeholder="Masukkan NIM"
+                        required />
+                </td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+
+                    <td><input type="text" name="username_input" class="text-field" id="username_id"
+                            placeholder="Set Username" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+
+                    <td><input type="password" name="passwoard_input" class="text-field" id="passwoard_id"
+                            placeholder="Set Passwoard" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+
+                    <td><input type="email" name="email_input" class="text-field" id="email_id"
+                            placeholder="Input Email" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>
+                        <input type="radio" name="jk_input" class="radioB" id="radioB" value="Pria">Pria</input></br>
+                        <input type="radio" name="jk_input" class="radioB" id="radioB"
+                            value="Wanita">Wanita</input></br>
+                    </td>
+
+                </tr>
+                <td>Alamat</td>
+                <td>
+                    <textarea rows="7" cols="50%"></textarea>
+                </td>
+                </tr>
+                <tr>
+                    <td>Hobi</td>
+                    <td>
+                        <input type="checkbox" name="hobi_input" class="checkbox" id="checkB_id"
+                            value="Renang">Renang</input></br>
+                        <input type="checkbox" name="hobi_input" class="checkbox" id="checkB_id"
+                            value="Bersepeda">Bersepeda</input></br>
+                        <input type="checkbox" name="hobi_input" class="checkbox" id="checkB_id"
+                            value="Memancing">Memancing</input></br>
+                        <input type="checkbox" name="hobi_input" class="checkbox" id="checkB_id"
+                            value="Belajar">Belajar</input></br>
+                        <input type="checkbox" name="hobi_input" class="checkbox" id="checkB_id"
+                            value="Membaca">Membaca</input></br>
+                        <input type="checkbox" name="hobi_input" class="checkbox" id="checkB_id"
+                            value="Menonton">Menonton</input></br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jurusan</td>
+
+                    <td>
+                        <select name="jp_input" class="dropdown">
+                            <option value="" selected>-----Pilih-----</option>
+                            <option value="Informatika">Informatika</option>
+                            <option value="Elektro">Elektro</option>
+                            <option value="Sistem Informasi">Sistem Informasi</option>
+                            <option value="MBTI">MBTI</option>
+                            <option value="DKV">DKV</option>
+                            <option value="Akuntansi">Akuntansi</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="submit">
+                        <button onclick="submit()" class="submit" type="submit" value="Sub">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <!--untuk chat-->
+    <div class="chat_box">
+        <div class="chat_head">Chatbox</div>
+        <div class="chat_body">
+            <div class="user">Wafa Zahida</div>
+        </div>
+    </div>
+
+    <div class="msg_box" style="right: 290px">
+        <div class="msg_head">Wafa Zahida
+            <div class="close">x</div>
+        </div>
+        <div class="msg_wrap">
+            <div class="msg_body">
+                <div class="msg_a">Hai</div>
+                <div class="msg_b">Hai</div>
+                <div class="msg_insert"></div>
+            </div>
+            <div class="msg_footer">
+                <textarea rows="2" class="msg_input" placeholder="Press Enter to send Message"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".nav-button").click(function () {
+                $(this).parent().parent().toggleClass("closed");
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        function submit() {
+            alert('Data Anda Telah Berhasil Disimpan');
+        }
+    </script>
+    <!--untuk chat-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('.chat_head').click(function () {
+
+                $('.chat_body').slideToggle('slow');
+
+                // $('.user').slideToggle('slow');
+
+            });
+
+
+
+            $('.msg_head').click(function () {
+
+                $('.msg_wrap').slideToggle('slow');
+
+                // $('.msg_box').slideToggle('slow');
+
+            });
+
+
+
+            $(".close").click(function () {
+
+                $('.msg_box').hide();
+
+            });
+
+
+
+            $(".user").click(function () {
+
+                $('.msg_wrap').show();
+
+                $('.msg_box').show();
+
+            });
+
+
+
+            $('textarea').keypress(function (e) {
+
+                if (e.keyCode == 13) {
+
+                    var msg = $(this).val();
+
+                    $(this).val('');
+
+                    $("<div class='msg_b'>" + msg + "</div>").insertBefore('.msg_insert');
+
+                    $('.msg_body').scrollTop($('.msg_body')[0].scrollHeight);
+
+                }
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>
